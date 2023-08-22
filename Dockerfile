@@ -11,4 +11,4 @@ RUN crontab /etc/cron.d/tv-grab-az-sdjson-sqlite
 COPY tv_grab_az_sdjson_sqlite /usr/bin
 RUN chmod +x /usr/bin/tv_grab_az_sdjson_sqlite
 
-CMD ["sh", "-c", "/usr/bin/tv_grab_az_sdjson_sqlite --config-file /config/sd.conf --output /xmltv/xmltv.xml ${arguments} && cron -f"]
+CMD ["sh", "-c", "/usr/bin/tv_grab_az_sdjson_sqlite --config-file /config/sd.conf --output /xmltv/xmltv.xml ${EXTRA_ARGS} && cron -f"]

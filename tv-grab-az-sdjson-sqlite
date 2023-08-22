@@ -1,0 +1,2 @@
+0 */10 * * * /usr/bin/tv_grab_az_sdjson_sqlite --config-file /config/sd.conf --output /xmltv/xmltv.xml "$EXTRA_ARGS" 2>&1
+
